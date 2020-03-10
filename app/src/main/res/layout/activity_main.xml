@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_codigo"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:hint="Código"
+        android:inputType="number" />
+
+    <EditText
+            android:id="@+id/txt_descripcion"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:inputType="textPersonName"
+            android:hint="Descripcion"/>
+
+        <EditText
+            android:id="@+id/txt_precio"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:inputType="numberDecimal"
+            android:hint="Precio" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:orientation="vertical"
+     android:layout_centerVertical="true">
+     <Button
+         android:id="@+id/BotonRegistrar"
+         android:layout_width="173dp"
+         android:layout_height="wrap_content"
+         android:background="#00897B"
+         android:textColor="#fff"
+         android:onClick="Registrar"
+         android:layout_marginBottom="5dp"
+         android:text="@string/BotonRegistrar" />
+    <Button
+        android:id="@+id/BotonEliminar"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:background="#00897B"
+        android:textColor="#fff"
+        android:onClick="Eliminar"
+        android:layout_marginBottom="5dp"
+        android:text="@string/BotonEliminar" />
+
+     <Button
+            android:id="@+id/BotonModificar"
+            android:layout_height="wrap_content"
+            android:layout_width="173dp"
+            android:background="#00897B"
+            android:textColor="#fff"
+            android:onClick="Modificar"
+            android:layout_marginBottom="5dp"
+            android:text="@string/BotonModificar" />
+
+    <Button
+        android:id="@+id/BotonBuscar"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:background="#00897B"
+        android:textColor="#fff"
+        android:onClick="Buscar"
+        android:text="@string/BotonBuscar" />
+
+</LinearLayout>
+
+</LinearLayout>
